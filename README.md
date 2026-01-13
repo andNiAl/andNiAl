@@ -190,8 +190,8 @@ I am currently **developing and structuring projects**, focused on strengthening
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> GitHub en números
 
 <div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=andniai&show_icons=true&bg_color=1A1A1A&title_color=E6B7B7&icon_color=C79A9A&text_color=EDEDED&border_color=2A2A2A" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andniai&layout=compact&bg_color=1A1A1A&title_color=E6B7B7&text_color=EDEDED&border_color=2A2A2A" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=andnial&show_icons=true&bg_color=1A1A1A&title_color=E6B7B7&icon_color=C79A9A&text_color=EDEDED&border_color=2A2A2A" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=andnial&layout=compact&bg_color=1A1A1A&title_color=E6B7B7&text_color=EDEDED&border_color=2A2A2A" />
 </div>
 
 
