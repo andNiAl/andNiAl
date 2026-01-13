@@ -13,7 +13,7 @@ jobs:
 
       - uses: Platane/snk@v3
         with:
-          github_user_name: andNiAI
+          github_user_name: andNiAl
           outputs: |
             dist/github-contribution-grid-snake.svg?color_snake=E6B7B7&color_dots=EAD1DC,F2D7D5,E6B7B7,D8A7A7
 
