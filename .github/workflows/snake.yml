@@ -11,11 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Crear carpeta dist
+        run: mkdir -p dist
+
       - uses: Platane/snk@v3
         with:
           github_user_name: andNiAl
-          snake_color: E6B7B7
-          dot_color: EAD1DC,F2D7D5,E6B7B7,D8A7A7
+          args: "--snake-color=E6B7B7 --dot-color=EAD1DC,F2D7D5,E6B7B7,D8A7A7"
+          outputs: "dist/github-contribution-grid-snake.svg"
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
@@ -23,4 +26,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
