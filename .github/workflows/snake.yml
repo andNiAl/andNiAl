@@ -1,14 +1,9 @@
 name: generate animation
 
 on:
-  # corre automáticamente cada 6 horas
   schedule:
     - cron: "0 */6 * * *"
-
-  # permite ejecutar manualmente
   workflow_dispatch:
-
-  # corre en cada push a main o master
   push:
     branches:
       - master
@@ -17,29 +12,22 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
     steps:
-      # checkout del repo
       - uses: actions/checkout@v3
 
-      # crear carpeta dist si no existe
       - name: Crear carpeta dist
         run: mkdir -p dist
 
-      # generar el Snake con colores personalizados usando v2
-      - name: generate github-contribution-grid-snake.svg
-        uses: Platane/snk@v2
+      - name: Generar Snake con colores personalizados
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          snake_color: E6B7B7
-          dot_color: EAD1DC,F2D7D5,E6B7B7,D8A7A7
+          args: "--snake-color=E6B7B7 --dot-color=EAD1DC,F2D7D5,E6B7B7,D8A7A7"
           outputs: dist/github-contribution-grid-snake.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # push del SVG a la rama output
-      - name: push github-contribution-grid-snake.svg to the output branch
+      - name: Subir SVG a rama output
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
