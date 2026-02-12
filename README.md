@@ -57,11 +57,27 @@ In my free time, I enjoy **playing some video games** or staying up to date with
 **andreanycholle15@gmail.com**   
 
 ---
-<img align="right" alt="GIF" height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />
 
 ### 🎧 Spotify Playing
 
-[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=21wlnvrn5hveoklqmstvnudwq&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false)](https://open.spotify.com/user/21wlnvrn5hveoklqmstvnudwq)
+<table align="center">
+<tr>
+<td width="40%" align="center">
+
+<img height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />
+
+</td>
+
+<td width="60%">
+
+<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=21wlnvrn5hveoklqmstvnudwq&cover_image=true&theme=novatorem&background_color=0d1117&interchange=false&bar_color=53b14f&bar_color_cover=true" />
+
+</td>
+</tr>
+</table>
+
+
+
 
 
 
