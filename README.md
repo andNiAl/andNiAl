@@ -61,7 +61,7 @@ In my free time, I enjoy **playing some video games** or staying up to date with
 
 ### 🎧 Spotify Playing 
 
-[![Spotify](https://novatorem.bgstatic.vercel.app/api/spotify)](https://open.spotify.com/user/21wlnvrn5hveoklqmstvnudwq)
+![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=21wlnvrn5hveoklqmstvnudwq&cover_image=true&theme=default)
 
 ---
 
