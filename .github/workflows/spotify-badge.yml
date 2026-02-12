@@ -2,7 +2,7 @@ name: Spotify Badge
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,20 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Generate Spotify Badge
+      - name: Generate Spotify SVG
         uses: kittinan/spotify-github-profile@master
-        env:
-          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
-          build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          client_id: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          client_secret: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          refresh_token: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Update Spotify badge" || echo "No changes"
+          git push
