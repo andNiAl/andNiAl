@@ -10,19 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Generate Spotify SVG
-        uses: kittinan/spotify-github-profile@master
+      - name: Generate Spotify profile
+        uses: kittinan/spotify-github-profile@v1.0.0
         with:
           client_id: ${{ secrets.SPOTIFY_CLIENT_ID }}
           client_secret: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           refresh_token: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
-
-      - name: Commit and push
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add .
-          git commit -m "Update Spotify badge" || echo "No changes"
-          git push
