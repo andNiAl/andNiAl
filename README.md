@@ -61,7 +61,7 @@ In my free time, I enjoy **playing some video games** or staying up to date with
 
 ### 🎧 Spotify Playing
 
-[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=21wlnvrn5hveoklqmstvnudwq&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false)](https://github.com/kittinan/spotify-github-profile)
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=21wlnvrn5hveoklqmstvnudwq&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false)](https://open.spotify.com/user/21wlnvrn5hveoklqmstvnudwq)
 
 
 
