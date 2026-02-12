@@ -59,9 +59,10 @@ In my free time, I enjoy **playing some video games** or staying up to date with
 ---
 <img align="right" alt="GIF" height="170px" src="https://media.giphy.com/media/J5B1Y8QZnzXXbLQIBu/giphy.gif" />
 
-### 🎧 Spotify Playing 
+### 🎧 Spotify Playing
 
-![Spotify](https://spotify-github-profile.kittinanx.com/api/view?uid=21wlnvrn5hveoklqmstvnudwq&cover_image=true&theme=default)
+![Spotify](https://spotify-github-profile.kittinanx.com/api/view.svg?uid=21wlnvrn5hveoklqmstvnudwq&cover_image=true)
+
 
 ---
 
